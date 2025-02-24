@@ -36,7 +36,7 @@ public class LoanService {
         }
 
         if (loans.isEmpty()) {
-            throw new NoLoansAvailableException("No loan found!");
+            throw new NoLoansAvailableException("No loan found.");
         }
 
         return new LoanResponseDTO(customer.getName(), loans);
