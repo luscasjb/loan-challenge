@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "a29c5982-d3ee-4635-b6e3-5e6ac8bb288a",
+		"name": "Bank Loan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29961777"
+	},
+	"item": [
+		{
+			"name": "Loan",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"age\": 26,\n    \"cpf\": \"275.484.389-23\",\n    \"name\": \"Vuxaywua Zukiagou\",\n    \"income\": 7000.00,\n    \"location\": \"SP\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer-loans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer-loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Loan w/error",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"age\": 26,\n    \"cpf\": \"275.484.389-23\",\n    \"name\": \"Vuxaywua Zukiagou\",\n    \"income\": 7000.00,\n    \"location\": \"SP\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer-loans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer-loans"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
